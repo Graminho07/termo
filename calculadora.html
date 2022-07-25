@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da 1° Lei</title>
+    <style>
+
+        body {
+            font-family: Roboto;
+            background: -webkit-linear-gradient(to left, #2b6eff, #2b6eff);
+            background: linear-gradient(to left, #2b6eff, #2b6eff);
+            }
+
+        #container{
+            margin: 0 auto;
+            width: auto;
+            display: table;
+            text-align: center;
+        }
+
+        #convert {
+            margin-top:4%;
+            background-color: #0335a0;
+        }
+        #clear {
+            margin-top:2%;
+            background-color: #0335a0;
+        }
+
+        #convert:hover {
+            background-color: #5dd3db;
+        }
+
+        #clear:hover {
+            background-color: #5dd3db;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            color: #ffffff;
+        }
+        input {
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 2em;
+            color: #3a37e7;
+            font-family: sans-serif;
+        }
+        ::-webkit-input-placeholder {
+            color: #ccc;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: #ccc;  
+        }
+        ::-moz-placeholder {  /* Firefox 19+ */
+            color: #ccc;  
+        }
+        :-ms-input-placeholder {  
+            color: #ccc;  
+        }
+        button {
+            padding: 10px;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <center><h1>Cálculo da 1° Lei</h1></center>
+
+        <center><input type="text" id="celsius" placeholder="Celsius" name="c" value="" /></center>
+
+        <center><input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="" /></center>
+
+        <button id="convert">Converter</button>
+        <button id="clear">Resetar</button>
+    </div>
+    <script src="conversor.js"></script>
+</body>
+</html>
