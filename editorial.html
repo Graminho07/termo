@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br"><head>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editorial</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="icon" href="img/Logo.png">
+    <link rel="icon" href="img/LOGO TRABALHO S.A..png">
 </head>
 <body>
     <nav id="top"> 
         <center><h1 class="efeito">Editorial</h1></center>
         <center><h2 class="efeito">Programação / Ciências da Natureza</h2></center>
-
-        <header>
-            <input class="container" type="checkbox" id="checkbox-menu">
-                <label for="checkbox-menu">
-                    <span></span> 
-                    <span></span>
-                    <span></span>
-                </label>
-        </header>
-
+        <div id="menu-bar" onclick="OnclickMenu()">
+            <div id="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>    
+            <div id="bar3" class="bar"></div>
+    
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="index.html">Início</a></li> 
+                <li><a href="editorial.html">Editorial</a></li> 
+                <li><a href="leis.html">Leis</a></li> 
+                <li><a href="calculadora.html">Calculadora</a></li> 
+                <li><a href="projeto.html">Nosso Projeto</a></li> 
+    
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
     </nav>
     <section>
-    
     <div class="editorial">  
         <p class="text"><img id="icon-1" src="./img/gbaoliveira.png" alt="">Gabriel Antônio<br>
         Programação do site <br>
@@ -40,32 +47,33 @@
 
         <br><br><br><br><br><br><br>
 
-        <p class="text"><img id="icon-2" src="./img/template.png" alt="">Lucas Franco<br>
-            Trem à vapor <br>
-            <a href="https://github.com/Graminho07">Github</a>
+
+        <p class="text"><img id="icon-3" src="./img/lucas.png" alt="">Lucas Franco<br>
+            Barco à vapor <br>
+            <a href="https://github.com/Midir0">Github</a>
         </p>
 
         <br><br><br><br><br><br><br>
 
-        <p class="text"><img id="icon-2" src="./img/template.png" alt="">Gabriel Lima<br>
-            Trem à vapor <br>
-            <a href="https://github.com/Graminho07">Github</a>
+        <p class="text"><img id="icon-4" src="./img/alves.jpg" alt="">Gabriel Lima<br>
+            Barco à vapor <br>
+            <a href="https://github.com/destroier116">Github</a>
         </p>
 
     </div>
     </section>
 
     <footer id="bottom">
-        <center><img id="escola-s" src="img/senai.png" alt=""></center>
+        <center><img id="escola-s" src="img/logoS.png" alt=""></center>
         <p id="text-fb">Monstros-SA 2B Sesi Senai</p>
     </footer>
     
-    <script src="./js/script.js"></script>
+    <script src="js/menu.js"></script>
 
-
+</body>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
 
-</body></html>
+</html>

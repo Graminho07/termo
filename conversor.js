@@ -1,24 +1,39 @@
 document.getElementById('convert').onclick = tempConvert;
 document.getElementById('clear').onclick = clearForm;
 
-function tempConvert(){
-    var fahrenheit = document.getElementById("fahrenheit").value;
-    var celsius = document.getElementById("celsius").value;
+getLocal = function(e) {
+    var store;
+    store = localStorage.cards;
+    if (store) {
+        return lista = [...JSON.parse(store), e];
+    } else {
+        return localStorage.cards = e;
+    }
+};
 
-    if(isNaN(fahrenheit) || isNaN(celsius)){
+function tempConvert(){
+    var q = document.getElementById("q").value;
+    var t = document.getElementById("t").value;
+    var result = result;
+
+    if(isNaN(q) || isNaN(t)){
         alert("Digite um valor válido!");
         return
-    }else if(fahrenheit === ''){
-        fahrenheit = (parseFloat(celsius) * 1.8) + 32;
-    } else if(celsius === ''){
-        celsius = (parseFloat(fahrenheit) - 32) / 1.8;
+    }else{
+        result = q - t;
     }
 
-    document.getElementById("fahrenheit").value = parseFloat(fahrenheit).toFixed(1);
-    document.getElementById("celsius").value = parseFloat(celsius).toFixed(1);
+    document.getElementById("q").value = parseFloat(q).toFixed();
+    document.getElementById("t").value = parseFloat(t).toFixed();
+    document.getElementById("result").value = parseFloat(result).toFixed();
+
+    lista = getLocal(result);
+    localStorage.cards = JSON.stringify(lista);
+
 }
 
 function clearForm(){
-    document.getElementById("fahrenheit").value = "";
-    document.getElementById("celsius").value = "";
+    document.getElementById("q").value = "";
+    document.getElementById("t").value = "";
+    document.getElementById("result").value = "";
 }

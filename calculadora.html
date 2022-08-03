@@ -4,81 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo da 1° Lei</title>
-    <style>
-
-        body {
-            font-family: Roboto;
-            background: -webkit-linear-gradient(to left, #2b6eff, #2b6eff);
-            background: linear-gradient(to left, #2b6eff, #2b6eff);
-            }
-
-        #container{
-            margin: 0 auto;
-            width: auto;
-            display: table;
-            text-align: center;
-        }
-
-        #convert {
-            margin-top:4%;
-            background-color: #0335a0;
-        }
-        #clear {
-            margin-top:2%;
-            background-color: #0335a0;
-        }
-
-        #convert:hover {
-            background-color: #5dd3db;
-        }
-
-        #clear:hover {
-            background-color: #5dd3db;
-        }
-
-        h1 {
-            font-family: sans-serif;
-            color: #ffffff;
-        }
-        input {
-            display: block;
-            padding: 10px;
-            margin-top: 10px;
-            font-size: 2em;
-            color: #3a37e7;
-            font-family: sans-serif;
-        }
-        ::-webkit-input-placeholder {
-            color: #ccc;
-        }
-        :-moz-placeholder { /* Firefox 18- */
-            color: #ccc;  
-        }
-        ::-moz-placeholder {  /* Firefox 19+ */
-            color: #ccc;  
-        }
-        :-ms-input-placeholder {  
-            color: #ccc;  
-        }
-        button {
-            padding: 10px;
-            font-size: 1.2em;
-            color: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="icon" href="img/LOGO TRABALHO S.A..png">
+    <title>Calculadora</title>
 </head>
 <body>
-    <div id="container">
-        <center><h1>Cálculo da 1° Lei</h1></center>
+    <nav id="top"> 
+        <center><h1 class="efeito">Calculadora</h1></center>
+        <center><h2 class="efeito">Programação / Ciências da Natureza</h2></center>
+        <div id="menu-bar" onclick="OnclickMenu()">
+            <div id="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>    
+            <div id="bar3" class="bar"></div>
+    
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="index.html">Início</a></li> 
+                <li><a href="editorial.html">Editorial</a></li> 
+                <li><a href="leis.html">Leis</a></li> 
+                <li><a href="calculadora.html">Calculadora</a></li> 
+                <li><a href="projeto.html">Nosso Projeto</a></li> 
+    
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+    </nav>
+    <section>
 
-        <center><input type="text" id="celsius" placeholder="Celsius" name="c" value="" /></center>
+        <div id="container">
+            <center><h1>Cálculo da Primeira Lei</h1></center>
+    
+            <center><input type="text" id="q" placeholder="Q – calor" name="c" value="" /></center>
+    
+            <center><input type="text" id="t" placeholder="τ – trabalho" name="f" value="" /></center>
+    
+            <center><input type="text" id="result" placeholder="ΔU - v. de energia interna" readonly></center>
 
-        <center><input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="" /></center>
+            <button type="button" class="botoes" id="convert">Calcular</button>
+            <button class="botoes" id="clear">Resetar</button>
+            <a href="calculadora.html" class="calculadoras">Calculadora da Primeira lei</a>
+            <br><br><br><a href="calculadora2lei.html" class="calculadoras">Calculadora da Segunda lei</a><br><br>
+        </div>
+        <script src="conversor.js"></script>
+        <script src="js/menu.js"></script>
+    </section>
 
-        <button id="convert">Converter</button>
-        <button id="clear">Resetar</button>
-    </div>
-    <script src="conversor.js"></script>
+    <footer id="bottom">
+        <center><img id="escola-s" src="img/logoS.png" alt=""></center>
+        <p id="text-fb">Monstros-SA 2B Sesi Senai</p>
+    </footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    
 </body>
 </html>

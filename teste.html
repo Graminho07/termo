@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+<style>
+
+body{
+    margin: 0;
+ }
+
+header{
+    background-color: rgb(55, 102, 202);
+    padding:  30px;
+}
+
+header h1{ 
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    border: 10px solid  rgb(40, 90, 184);
+    border-radius: 46px;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+input{
+    margin-top: 10px;
+    width: 20%;
+    padding: 10px;
+    border: 7px solid #186ca1;
+}
+
+input:hover{
+    background-color: #8bd3ff;
+}
+
+button{
+    margin: 5px;
+    width: 5%;
+    height: 50px;
+}
+        
+</style>
+</head>
+<body>
+    <header>
+        <h1><center>Calculadora</center><p> <b></b></p></h1>
+    </header> 
+
+    <div class="container"> 
+        <center><input type="number" id="x" placeholder="Digite o valor"></center>
+        <br><br>
+        <center><input type="number" id="y" placeholder="Digite o valor"></center>
+        <br><br>
+        <center><input type="number" id="z" placeholder="Resultado" readonly=""></center>
+        <br><br>
+        <center><button type="button" onclick="somar()"> ➕ </button></center>
+        <br><br>
+        <center><button type="button" onclick="subtrair()"> ➖ </button></center>
+        <br><br>
+        <center><button type="button" onclick="dividir()"> ➗ </button></center>
+    </div>
+
+    <script>
+            const somar = function(){
+            let x = document.getElementById('x').value
+            let y = document.getElementById('y').value
+            z = parseFloat(x) + parseFloat(y)
+            document.getElementById('z').value = z
+            console.log(z)
+         }
+
+            const subtrair = function(){
+            let x = document.getElementById('x').value
+            let y = document.getElementById('y').value
+            z = parseFloat(x) - parseFloat(y)
+            document.getElementById('z').value = z
+            console.log(z)  
+         }   
+
+         const dividir = function(){
+            let x = document.getElementById('x').value
+            let y = document.getElementById('y').value
+            z = parseFloat(x) / parseFloat(y)
+            document.getElementById('z').value = z
+            console.log(z)
+         }
+            if(x == 0) {
+            window.alert("Não há divisão por zero");
+        }
+            
+    </script>
+
+</body></html>
