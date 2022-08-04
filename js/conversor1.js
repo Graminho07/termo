@@ -5,7 +5,7 @@ getLocal = function(e) {
     var store1;
     store1 = localStorage.cards;
     if (store1) {
-        return lista1 = [...JSON.parse(store1), e];
+        return lista1 = [JSON.parse(store), e];
     } else {
         return localStorage.cards = e;
     }
